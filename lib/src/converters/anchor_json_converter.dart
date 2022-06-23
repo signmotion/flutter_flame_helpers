@@ -4,7 +4,7 @@ import 'package:json_annotation/json_annotation.dart';
 import '../extensions/anchor_extension.dart';
 
 class AnchorJsonConverter implements JsonConverter<Anchor, String?> {
-  static const defaultAnchor = Anchor.center;
+  static const defaultAnchor = Anchor.topLeft;
 
   const AnchorJsonConverter();
 

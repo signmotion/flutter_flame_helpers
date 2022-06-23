@@ -1,6 +1,8 @@
 import 'package:collection/collection.dart' show IterableExtension;
 import 'package:flame/components.dart';
 
+import '../../flutter_flame_helpers.dart';
+
 extension AnchorExtension on Anchor {
   static final anchorList = <String, Vector2>{
     'topLeft': Anchor.topLeft.toVector2(),
@@ -19,7 +21,7 @@ extension AnchorExtension on Anchor {
     'center left': Anchor.centerLeft.toVector2(),
     'leftCenter': Anchor.centerLeft.toVector2(),
     'left center': Anchor.centerLeft.toVector2(),
-    '': Anchor.center.toVector2(),
+    '': AnchorJsonConverter.defaultAnchor.toVector2(),
     'center': Anchor.center.toVector2(),
     'center center': Anchor.center.toVector2(),
     'centerRight': Anchor.centerRight.toVector2(),
